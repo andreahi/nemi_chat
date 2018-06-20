@@ -1,0 +1,87 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hvor mye data har jeg igjen på 97778430?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "97778430",
+            "entity": "msisdn"
+          }
+        ]
+      },
+      {
+        "text": "hvor mye data har jeg igjen på 97778430",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "97778430",
+            "entity": "msisdn"
+          }
+        ]
+      },
+      {
+        "text": "Vis meg forbruk på 9777830",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "97778430",
+            "entity": "msisdn"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 97778430?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "97778430",
+            "entity": "msisdn"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 91158634 denne måneden?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "91158634",
+            "entity": "msisdn"
+          }
+        ]
+      },
+      {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "msisdn",
+        "pattern": "[0-9]{8}"
+      }
+    ],
+    "entity_synonyms": [
+
+    ]
+  }
+}
+
+

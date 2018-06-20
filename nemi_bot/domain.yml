@@ -1,0 +1,120 @@
+intents:
+  # add your intents
+  - greet
+  - thank
+  - bye
+  - deny
+  - affirm
+  - trenger_data
+  - buy_1gb
+  - confirm_buy_1gb
+  - buy_5gb
+  - confirm_buy_5gb
+  - buy_10gb
+  - confirm_buy_10gb
+  - change_subscription
+  - change_subscription_yng
+  - change_subscription_medium
+  - change_subscription_flexi
+  - confirm_change_subscription_yng
+  - confirm_change_subscription_medium
+  - confirm_change_subscription_flexi
+  - get_puk
+  - get_invoice_page
+  - get_data_usage
+  - get_data_usage_msisdn
+  - get_swap_info
+  - random
+
+
+entities:
+  # replace with your entities
+  - example_entity
+  - msisdn
+
+slots:
+  # replace with your slots
+  example_slot:
+    type: unfeaturized
+  msisdn:
+    type: text
+
+templates:
+  # templates the bot should respond with
+  utter_greet:
+    - "Hei, hvordan kan jeg helpe deg?"
+  utter_thank:
+    - "vær så god"
+  utter_bye:
+    - "Ha det bra"
+  utter_buy_data:
+    - text: "Jeg kan hjelpe deg med å kjøpe data. Hvor mye trenger du?"
+      buttons:
+      - title: "1 GB"
+        payload: "1 GB"
+      - title: "5 GB"
+        payload: "5 GB"
+      - title: "10 GB"
+        payload: "10 GB"
+  ack_buy_data_1gb:
+    - "Jeg bestiller nå 1GB med data til deg"
+  ack_buy_data_5gb:
+    - "Jeg bestiller nå 5GB med data til deg"
+  ack_buy_data_10gb:
+    - "Jeg bestiller nå 10GB med data til deg"
+
+  utter_change_subscription:
+    - text: "Jeg kan hjelpe deg med å bytte abonnement. Hva ønsker du å bytte til?"
+      buttons:
+      - title: "yng"
+        payload: "yng"
+      - title: "medium"
+        payload: "medium"
+      - title: "flexi"
+        payload: "flexi"
+  ack_change_subscription_yng:
+    - "Jeg endrer nå abonnementet ditt til yng"
+  ack_change_subscription_medium:
+    - "Jeg endrer nå abonnementet ditt til medium"
+  ack_change_subscription_flexi:
+    - "Jeg endrer nå abonnementet ditt til flexi"
+
+  utter_get_puk:
+    - "Jeg kan finne PUK-koden din for deg. Ønsker du å se PUK-koden din?"
+  ack_get_puk:
+    - "Her er PUK-koden din: 123456789"
+  utter_get_invoice_page:
+    - "Info om dine fakturaer finner du her: https://www.telenor.no/privat/minesider/faktura/faktura.cms"
+  utter_get_data_usage:
+    - "Du har brukt 2.5GB av 5GB denne måneden. For mer info gå til https://www.telenor.no/privat/minesider/faktura/forbruksdetaljer.cms"
+  utter_get_data_usage_msisdn:
+    - "Du har brukt 2.5GB av 5GB denne måneden på {msisdn}."
+  utter_get_swap_info:
+    - "Gå hit for mer info om hvordan du swapper: https://www.telenor.no/privat/mobil/swap/swappe.jsp "
+  utter_repeat_question:
+    - "Jeg er ikke sikker på hva du vil jeg skal gjøre. Kan du gjenta spørsmålet?"
+  utter_random:
+    - "Jeg kan dessverre ikke hjelpe deg med det"
+
+actions:
+  # all the utter actions from the templates, plus any custom actions
+  - utter_greet
+  - utter_thank
+  - utter_bye
+  - utter_buy_data
+  - ack_buy_data_1gb
+  - ack_buy_data_5gb
+  - ack_buy_data_10gb
+  - utter_change_subscription
+  - ack_change_subscription_yng
+  - ack_change_subscription_medium
+  - ack_change_subscription_flexi
+  - utter_get_puk
+  - ack_get_puk
+  - utter_get_invoice_page
+  - utter_get_data_usage
+  - utter_get_data_usage_msisdn
+  - utter_get_swap_info
+  - utter_repeat_question
+  - utter_random
+
