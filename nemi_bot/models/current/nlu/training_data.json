@@ -1,0 +1,1133 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "pattern": "[0-9]{8}",
+        "name": "msisdn"
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "Hei",
+        "intent": "greet"
+      },
+      {
+        "text": "Hallo",
+        "intent": "greet"
+      },
+      {
+        "text": "Halo",
+        "intent": "greet"
+      },
+      {
+        "text": "Morn",
+        "intent": "greet"
+      },
+      {
+        "text": "sup",
+        "intent": "greet"
+      },
+      {
+        "text": "sup?",
+        "intent": "greet"
+      },
+      {
+        "text": "God dag",
+        "intent": "greet"
+      },
+      {
+        "text": "Hi",
+        "intent": "greet"
+      },
+      {
+        "text": "Hey",
+        "intent": "greet"
+      },
+      {
+        "text": "Hi bot",
+        "intent": "greet"
+      },
+      {
+        "text": "Hey bot",
+        "intent": "greet"
+      },
+      {
+        "text": "Hello",
+        "intent": "greet"
+      },
+      {
+        "text": "Good morning",
+        "intent": "greet"
+      },
+      {
+        "text": "hi again",
+        "intent": "greet"
+      },
+      {
+        "text": "hi folks",
+        "intent": "greet"
+      },
+      {
+        "text": "hi Mister",
+        "intent": "greet"
+      },
+      {
+        "text": "hi pal!",
+        "intent": "greet"
+      },
+      {
+        "text": "hi there",
+        "intent": "greet"
+      },
+      {
+        "text": "greetings",
+        "intent": "greet"
+      },
+      {
+        "text": "hello everybody",
+        "intent": "greet"
+      },
+      {
+        "text": "hello is anybody there",
+        "intent": "greet"
+      },
+      {
+        "text": "hello robot",
+        "intent": "greet"
+      },
+      {
+        "text": "Takk",
+        "intent": "thank"
+      },
+      {
+        "text": "Thanks",
+        "intent": "thank"
+      },
+      {
+        "text": "Thank you",
+        "intent": "thank"
+      },
+      {
+        "text": "Thank you so much",
+        "intent": "thank"
+      },
+      {
+        "text": "Thanks bot",
+        "intent": "thank"
+      },
+      {
+        "text": "Thanks for that",
+        "intent": "thank"
+      },
+      {
+        "text": "cheers",
+        "intent": "thank"
+      },
+      {
+        "text": "cheers bro",
+        "intent": "thank"
+      },
+      {
+        "text": "ok thanks!",
+        "intent": "thank"
+      },
+      {
+        "text": "perfect thank you",
+        "intent": "thank"
+      },
+      {
+        "text": "thanks a bunch for everything",
+        "intent": "thank"
+      },
+      {
+        "text": "thanks for the help",
+        "intent": "thank"
+      },
+      {
+        "text": "thanks a lot",
+        "intent": "thank"
+      },
+      {
+        "text": "amazing, thanks",
+        "intent": "thank"
+      },
+      {
+        "text": "cool, thanks",
+        "intent": "thank"
+      },
+      {
+        "text": "cool thank you",
+        "intent": "thank"
+      },
+      {
+        "text": "no",
+        "intent": "deny"
+      },
+      {
+        "text": "definitely not",
+        "intent": "deny"
+      },
+      {
+        "text": "never",
+        "intent": "deny"
+      },
+      {
+        "text": "absolutely not",
+        "intent": "deny"
+      },
+      {
+        "text": "i don't think so",
+        "intent": "deny"
+      },
+      {
+        "text": "i'm afraid not",
+        "intent": "deny"
+      },
+      {
+        "text": "no sir",
+        "intent": "deny"
+      },
+      {
+        "text": "no ma'am",
+        "intent": "deny"
+      },
+      {
+        "text": "no way",
+        "intent": "deny"
+      },
+      {
+        "text": "no sorry",
+        "intent": "deny"
+      },
+      {
+        "text": "No, not really.",
+        "intent": "deny"
+      },
+      {
+        "text": "nah not for me",
+        "intent": "deny"
+      },
+      {
+        "text": "nah",
+        "intent": "deny"
+      },
+      {
+        "text": "no and no again",
+        "intent": "deny"
+      },
+      {
+        "text": "no go",
+        "intent": "deny"
+      },
+      {
+        "text": "yes",
+        "intent": "affirm"
+      },
+      {
+        "text": "yepp",
+        "intent": "affirm"
+      },
+      {
+        "text": "yez",
+        "intent": "affirm"
+      },
+      {
+        "text": "jepp",
+        "intent": "affirm"
+      },
+      {
+        "text": "Ja, takk",
+        "intent": "affirm"
+      },
+      {
+        "text": "ok",
+        "intent": "affirm"
+      },
+      {
+        "text": "jupp",
+        "intent": "affirm"
+      },
+      {
+        "text": "Gjerne det",
+        "intent": "affirm"
+      },
+      {
+        "text": "Jeg er tom for data",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "Jeg trenger mer data",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "Hvor kan jeg kjøpe mer data?",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "Hvordan kan jeg få mer data?",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "Jeg vil kjøpe data",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "jeg ønsker å kjøpe datapakke",
+        "intent": "trenger_data"
+      },
+      {
+        "text": "Jeg ønsker å bestille 1gb data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 1 gb data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 1gb",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 1 gb",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil bestille 1 gb med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gb med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 GB med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigabyte med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigz med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigs med data",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "1 GB",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "1GB",
+        "intent": "confirm_buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 1gb data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 1 gb data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 1gb",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 1 gb",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil bestille 1 gb med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gb med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 GB med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigabyte med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigz med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 1 gigs med data",
+        "intent": "buy_1gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 5gb data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 5 gb data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 5gb",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 5 gb",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil bestille 5 gb med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil bestille 5 GB med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gb med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigabyte med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigz med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigs med data",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "5 GB",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "5GB",
+        "intent": "confirm_buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 5gb data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 5 gb data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 5gb",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 5 gb",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil bestille 5 gb med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil bestille 5 GB med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gb med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigabyte med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigz med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 5 gigs med data",
+        "intent": "buy_5gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 10gb data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 10 gb data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 10gb",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 10 gb",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil bestille 10 gb med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gb med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 GB med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigabyte med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigz med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigs med data",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "10 GB",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "10GB",
+        "intent": "confirm_buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 10gb data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille 10 gb data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 10gb",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bestille datapakke på 10 gb",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil bestille 10 gb med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gb med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 GB med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigabyte med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigz med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg vil kjøpe 10 gigs med data",
+        "intent": "buy_10gb"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement",
+        "intent": "change_subscription"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement",
+        "intent": "change_subscription"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement",
+        "intent": "change_subscription"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement",
+        "intent": "change_subscription"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil bytte til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil bestille yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil endre til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil endre abonnement til yng",
+        "intent": "change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil bytte til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil bestille yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg vil endre til yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "yng",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "ung",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "young",
+        "intent": "confirm_change_subscription_yng"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil bytte til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil bestille medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil endre til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil endre abonnement til medium",
+        "intent": "change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil bytte til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil bestille medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg vil endre til medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "medium",
+        "intent": "confirm_change_subscription_medium"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil bytte til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil bestille flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil endre til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil endre abonnement til flexi",
+        "intent": "change_subscription_flexi"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonnement til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg ønsker å bytte abonement til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg ønsker å bytte abbonement til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg trenger å endre abonnement til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil bytte til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil bestille flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg vil endre til flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "flexi",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "flex",
+        "intent": "confirm_change_subscription_flexi"
+      },
+      {
+        "text": "Jeg har glemt pin koden",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Jeg har glemt pin-koden",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Jeg har glemt pinnkoden",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Jeg har glemt pinkoden",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Hvor finner jeg puk?",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Jeg trenger puk koden min",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Kan du finne puk-koden min?",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Kan jeg se puk koden min?",
+        "intent": "get_puk"
+      },
+      {
+        "text": "Hvor kan jeg se mine fakturaer?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor kan jeg se min faktura?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor finner jeg regningene mine?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Har jeg ubetalte regneringer?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor ser jeg invoices?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor er oversikt over regninger?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor finner jeg ubetalte regneringer?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Har jeg ubetalte regninger?",
+        "intent": "get_invoice_page"
+      },
+      {
+        "text": "Hvor mye data har jeg brukt?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvor mye data har jeg igjen denne måneden?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Kan jeg se hvor mye data jeg har brukt?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvor mye data har jeg igjen?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvor mye data er igjen denne måneden?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvordan har dataforbruket mitt vært denne måneden?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Kan du vise meg hvor mye data jeg har brukt?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvor kan jeg hvor mye data jeg har brukt?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Jeg vil se hvor mye data jeg har brukt",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvor mye data har jeg brukt denne måneden?",
+        "intent": "get_data_usage"
+      },
+      {
+        "text": "Hvordan SWAPPER jeg telefon?",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Jeg ønsker å swappe",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Jeg har swap, men telefonen min er skadet",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Hvordan går jeg frem for å swappe?",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Hvor går jeg for å swappe?",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Jeg vil swappe",
+        "intent": "get_swap_info"
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 97778430",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "97778430"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 10000001",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "10000001"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 99999999",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "99999999"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 99778430?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "99778430"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 10000002?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "10000002"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 99999998?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "99999998"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg igjen på 91158634",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "91158634"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg igjen på 10000003",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "10000003"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg igjen på 99999997",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "99999997"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 10000004 denne måneden?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "10000004"
+          }
+        ]
+      },
+      {
+        "text": "Hvor mye data har jeg brukt på 99999996 denne måneden?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "entity": "msisdn",
+            "value": "99999996"
+          }
+        ]
+      },
+      {
+        "text": "Vis meg forbruk på 87654321",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "entity": "msisdn",
+            "value": "87654321"
+          }
+        ]
+      },
+      {
+        "text": "Vis meg forbruk på 99999995",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "entity": "msisdn",
+            "value": "99999995"
+          }
+        ]
+      },
+      {
+        "text": "Vis meg forbruk på 10000005",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "entity": "msisdn",
+            "value": "10000005"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på 88654321?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "entity": "msisdn",
+            "value": "88654321"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på 99999994?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "entity": "msisdn",
+            "value": "99999994"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på 10000006?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "entity": "msisdn",
+            "value": "10000006"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på telefonnummer 88654322?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 41,
+            "end": 49,
+            "entity": "msisdn",
+            "value": "88654322"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på telefonnummer 10000007?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 41,
+            "end": 49,
+            "entity": "msisdn",
+            "value": "10000007"
+          }
+        ]
+      },
+      {
+        "text": "Kan du vise meg forbruk på telefonnummer 99999993?",
+        "intent": "get_data_usage_msisdn",
+        "entities": [
+          {
+            "start": 41,
+            "end": 49,
+            "entity": "msisdn",
+            "value": "99999993"
+          }
+        ]
+      }
+    ],
+    "entity_synonyms": []
+  }
+}

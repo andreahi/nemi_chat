@@ -1,0 +1,65 @@
+{
+  "max_histories": [
+    3,
+    5
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "action_fingerprints": {
+    "ack_change_subscription_yng": {
+      "slots": []
+    },
+    "action_listen": {
+      "slots": []
+    },
+    "utter_get_data_usage_msisdn": {
+      "slots": []
+    },
+    "ack_change_subscription_medium": {
+      "slots": []
+    },
+    "ack_get_puk": {
+      "slots": []
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "utter_repeat_question": {
+      "slots": []
+    },
+    "ack_buy_data_10gb": {
+      "slots": []
+    },
+    "utter_get_data_usage": {
+      "slots": []
+    },
+    "utter_get_invoice_page": {
+      "slots": []
+    },
+    "utter_get_swap_info": {
+      "slots": []
+    },
+    "utter_random": {
+      "slots": []
+    },
+    "ack_change_subscription_flexi": {
+      "slots": []
+    },
+    "ack_buy_data_1gb": {
+      "slots": []
+    },
+    "ack_buy_data_5gb": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.9.4"
+}

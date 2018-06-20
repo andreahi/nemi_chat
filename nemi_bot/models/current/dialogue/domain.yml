@@ -1,0 +1,133 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_thank
+- utter_bye
+- utter_buy_data
+- ack_buy_data_1gb
+- ack_buy_data_5gb
+- ack_buy_data_10gb
+- utter_change_subscription
+- ack_change_subscription_yng
+- ack_change_subscription_medium
+- ack_change_subscription_flexi
+- utter_get_puk
+- ack_get_puk
+- utter_get_invoice_page
+- utter_get_data_usage
+- utter_get_data_usage_msisdn
+- utter_get_swap_info
+- utter_repeat_question
+- utter_random
+actions:
+- utter_greet
+- utter_thank
+- utter_bye
+- utter_buy_data
+- ack_buy_data_1gb
+- ack_buy_data_5gb
+- ack_buy_data_10gb
+- utter_change_subscription
+- ack_change_subscription_yng
+- ack_change_subscription_medium
+- ack_change_subscription_flexi
+- utter_get_puk
+- ack_get_puk
+- utter_get_invoice_page
+- utter_get_data_usage
+- utter_get_data_usage_msisdn
+- utter_get_swap_info
+- utter_repeat_question
+- utter_random
+config:
+  store_entities_as_slots: true
+entities:
+- example_entity
+- msisdn
+intents:
+- greet
+- thank
+- bye
+- deny
+- affirm
+- trenger_data
+- buy_1gb
+- confirm_buy_1gb
+- buy_5gb
+- confirm_buy_5gb
+- buy_10gb
+- confirm_buy_10gb
+- change_subscription
+- change_subscription_yng
+- change_subscription_medium
+- change_subscription_flexi
+- confirm_change_subscription_yng
+- confirm_change_subscription_medium
+- confirm_change_subscription_flexi
+- get_puk
+- get_invoice_page
+- get_data_usage
+- get_data_usage_msisdn
+- get_swap_info
+- random
+slots:
+  example_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  msisdn:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  ack_buy_data_10gb:
+  - text: Jeg bestiller nå 10GB med data til deg
+  ack_buy_data_1gb:
+  - text: Jeg bestiller nå 1GB med data til deg
+  ack_buy_data_5gb:
+  - text: Jeg bestiller nå 5GB med data til deg
+  ack_change_subscription_flexi:
+  - text: Jeg endrer nå abonnementet ditt til flexi
+  ack_change_subscription_medium:
+  - text: Jeg endrer nå abonnementet ditt til medium
+  ack_change_subscription_yng:
+  - text: Jeg endrer nå abonnementet ditt til yng
+  ack_get_puk:
+  - text: 'Her er PUK-koden din: 123456789'
+  utter_buy_data:
+  - buttons:
+    - payload: 1 GB
+      title: 1 GB
+    - payload: 5 GB
+      title: 5 GB
+    - payload: 10 GB
+      title: 10 GB
+    text: Jeg kan hjelpe deg med å kjøpe data. Hvor mye trenger du?
+  utter_bye:
+  - text: Ha det bra
+  utter_change_subscription:
+  - buttons:
+    - payload: yng
+      title: yng
+    - payload: medium
+      title: medium
+    - payload: flexi
+      title: flexi
+    text: Jeg kan hjelpe deg med å bytte abonnement. Hva ønsker du å bytte til?
+  utter_get_data_usage:
+  - text: Du har brukt 2.5GB av 5GB denne måneden. For mer info gå til https://www.telenor.no/privat/minesider/faktura/forbruksdetaljer.cms
+  utter_get_data_usage_msisdn:
+  - text: Du har brukt 2.5GB av 5GB denne måneden på {msisdn}.
+  utter_get_invoice_page:
+  - text: 'Info om dine fakturaer finner du her: https://www.telenor.no/privat/minesider/faktura/faktura.cms'
+  utter_get_puk:
+  - text: Jeg kan finne PUK-koden din for deg. Ønsker du å se PUK-koden din?
+  utter_get_swap_info:
+  - text: 'Gå hit for mer info om hvordan du swapper: https://www.telenor.no/privat/mobil/swap/swappe.jsp '
+  utter_greet:
+  - text: Hei, hvordan kan jeg helpe deg?
+  utter_random:
+  - text: Jeg kan dessverre ikke hjelpe deg med det
+  utter_repeat_question:
+  - text: Jeg er ikke sikker på hva du vil jeg skal gjøre. Kan du gjenta spørsmålet?
+  utter_thank:
+  - text: vær så god
+topics: []
