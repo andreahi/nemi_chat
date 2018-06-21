@@ -1,6 +1,6 @@
 FROM amd64/python:3.5.5-jessie
 ADD nemi_bot /bot
-ADD requirements.txt /bit
+ADD requirements.txt /bot
 WORKDIR /bot
 RUN pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp36-cp36m-linux_x86_64.whl
 RUN pip install -r requirements.txt
