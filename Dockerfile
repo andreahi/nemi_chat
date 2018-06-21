@@ -4,7 +4,7 @@ ADD requirements.txt /
 WORKDIR /
 RUN export LD_RUN_PATH=/usr/local/lib
 RUN yum install -y graphviz
-RUN pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp35-cp35m-linux_x86_64.whl
+RUN pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp36-cp36m-linux_x86_64.whl
 RUN pip install -r requirements.txt
 RUN python -m spacy download xx_ent_wiki_sm
 RUN python -m spacy link xx_ent_wiki_sm xx
