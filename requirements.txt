@@ -11,6 +11,8 @@ duckling==1.7.3
 spacy==2.0.5
 scikit-learn==0.19.1
 
-#sudo apt-get install python-dev graphviz libgraphviz-dev pkg-config
-graphviz==0.8.3
-pygraphviz
+
+
+# If problems with twisted and incremental on osx:
+#pip install --upgrade incremental
+#pip install Twisted
