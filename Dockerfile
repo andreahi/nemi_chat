@@ -1,4 +1,5 @@
 FROM amd64/python:3.5.5-jessie
+USER root
 ADD nemi_bot /usr/share
 ADD requirements.txt /usr/share
 WORKDIR /usr/share/
