@@ -1,4 +1,4 @@
-+
+
 ## intent:greet
 - Hei
 - Hallo
@@ -42,6 +42,11 @@
 - cool thank you
 
 ## intent:deny
+- nei
+- nopp
+- Ellers takk
+- neei!
+- Stop
 - no
 - definitely not
 - never
@@ -49,7 +54,7 @@
 - i don't think so
 - i'm afraid not
 - no sir
-- no ma'am
+- no ma'amt
 - no way
 - no sorry
 - No, not really.
@@ -67,6 +72,9 @@
 - ok
 - jupp
 - Gjerne det
+- Gjør det!
+- Sure
+- Do it
 
 ## intent:trenger_data
 - Jeg er tom for data
@@ -102,6 +110,9 @@
 - Jeg vil kjøpe 1 gigabyte med data
 - Jeg vil kjøpe 1 gigz med data
 - Jeg vil kjøpe 1 gigs med data
+- Den minste
+- Jeg vil kjøpe den minste
+- Den lille
 
 ## intent:confirm_buy_5gb
 - Jeg ønsker å bestille 5gb data
@@ -143,7 +154,9 @@
 - Jeg vil kjøpe 10 gigs med data
 - 10 GB
 - 10GB
-
+- Jeg vil ha den største
+- Den største
+- Jeg vil kjøpe den største pakken
 
 ## intent:buy_10gb
 - Jeg ønsker å bestille 10gb data
@@ -163,6 +176,7 @@
 - Jeg ønsker å bytte abonement
 - Jeg ønsker å bytte abbonement
 - Jeg trenger å endre abonnement
+- Jeg vil bytte abonnement
 
 ## intent:change_subscription_yng
 - Jeg ønsker å bytte abonnement til yng
@@ -173,6 +187,7 @@
 - Jeg vil bestille yng
 - Jeg vil endre til yng
 - Jeg vil endre abonnement til yng
+- Jeg vil endre abonnement til ung
 
 ## intent:confirm_change_subscription_yng
 - Jeg ønsker å bytte abonnement til yng
@@ -236,6 +251,7 @@
 - Jeg trenger puk koden min
 - Kan du finne puk-koden min?
 - Kan jeg se puk koden min?
+- Jeg finner ikke PUK koden min
 
 ## intent:get_invoice_page
 - Hvor kan jeg se mine fakturaer?
@@ -266,6 +282,7 @@
 - Hvordan går jeg frem for å swappe?
 - Hvor går jeg for å swappe?
 - Jeg vil swappe
+- Hvor kan jeg swappe?
 
 
 ## regex:msisdn
@@ -293,4 +310,14 @@
 - Kan du vise meg forbruk på telefonnummer [10000007](msisdn)?
 - Kan du vise meg forbruk på telefonnummer [99999993](msisdn)?
 
+## intent:greet_get_puk
+- Hei, Jeg trenger puk koden min
+- yo, jeg har glemt pin koden min
 
+
+## intent:get_chat_usage_info
+- Hva kan du hjelpe meg med?
+- Hva kan du hjelpe med?
+- Hva kan du hjelp meg med?
+- Hva kan du gjøre for meg?
+- Hva kan du?
