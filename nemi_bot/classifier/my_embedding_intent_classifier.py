@@ -52,7 +52,7 @@ class MyEmbeddingIntentClassifier(Component):
     However, in this implementation the `mu` parameter is treated differently
     and additional hidden layers are added together with dropout."""
 
-    name = "component.MyEmbeddingIntentClassifier"
+    name = "classifier.MyEmbeddingIntentClassifier"
 
     provides = ["intent", "intent_ranking"]
 
@@ -64,15 +64,15 @@ class MyEmbeddingIntentClassifier(Component):
         "hidden_layer_size_a": [256, 128],
         "num_hidden_layers_b": 0,
         "hidden_layer_size_b": [],
-        "batch_size": 32,
-        "epochs": 300,
+        "batch_size": 100,
+        "epochs": 200,
 
         # embedding parameters
         "embed_dim": 10,
         "mu_pos": 0.8,  # should be 0.0 < ... < 1.0 for 'cosine'
         "mu_neg": -0.4,  # should be -1.0 < ... < 1.0 for 'cosine'
         "similarity_type": 'cosine',  # string 'cosine' or 'inner'
-        "num_neg": 10,
+        "num_neg": 20,
         "use_max_sim_neg": True,  # flag which loss function to use
 
         # regularization
@@ -81,7 +81,7 @@ class MyEmbeddingIntentClassifier(Component):
         "droprate": 0.2,
 
         # flag if tokenize intents
-        "intent_tokenization_flag": False,
+        "intent_tokenization_flag": True,
         "intent_split_symbol": '_'
     }
 
@@ -468,7 +468,7 @@ class MyEmbeddingIntentClassifier(Component):
             sim, loss = self._create_tf_graph(a_in, b_in, is_training)
             self.similarity_op = sim
 
-            train_op = tf.train.AdamOptimizer(learning_rate=0.0001).minimize(loss)
+            train_op = tf.train.AdamOptimizer(learning_rate=0.001).minimize(loss)
 
             # train tensorflow graph
             sess = tf.Session()
